@@ -1,0 +1,84 @@
+@import "../../../styles/main.scss";
+
+.home {
+  font-family: $main-font;
+  height: 100vh;
+  &-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+    &-1 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-2 {
+      padding: 5% 0;
+    }
+    &-heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 4rem;
+      &-img {
+        height: 5.5rem;
+        width: 5rem;
+     
+      }
+      &-header {
+        padding-left: 15px;
+        h1 {
+          font-size: 3rem;
+          color: $color-primary;
+          line-height: 3rem;
+        }
+        p {
+          letter-spacing: 0.9rem;
+          color: $color-primary;
+          line-height: 3rem;
+          padding-left: 15px;
+        }
+      }
+    }
+    &-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h4 {
+        margin-top: 1rem;
+        color: $color-secondary;
+        font-size: 4rem;
+        font-weight: lighter;
+        line-height: 4rem; 
+        margin-bottom: 1rem;
+      }
+      h2 {
+        color: $color-secondary;
+
+        font-size: 5rem;
+
+        font-weight: 900;
+        line-height: 4rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1rem;
+        color: $color-secondary;
+     width: 50%;
+     
+        margin: auto;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+
+.home > img {
+  width: 65%;
+  height: 94%;
+}

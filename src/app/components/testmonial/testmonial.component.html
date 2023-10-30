@@ -1,0 +1,33 @@
+<section class="testimonial-section">
+    <div class="container">
+        <div class="header-1">
+            
+            <div class="header-2">
+                <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+            <div class="line-4"></div>
+                <h2> testimonial</h2>
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col-md-6" *ngFor="let user of users">
+                <div class="testimonial-card">
+                    <div class="testimonial-card-avatar">
+                        <img [src]="user.avatar" alt="" >
+                    </div>
+                    <div class="testimonial-card-text">
+                        <h3>{{user.first_name}} {{user.last_name}}</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia soluta ducimus harum et odio quae, distinctio fugiat necessitatibus libero itaque eum maiores suscipit aperiam esse! Ad voluptatem fugiat neces</p>
+                        <span><i class="fa-solid fa-star " style="color: #6d91ee;"></i></span>
+                        <span><i class="fa-solid fa-star " style="color: #6d91ee;"></i></span>
+                        <span><i class="fa-solid fa-star " style="color: #6d91ee;"></i></span>
+                        <span><i class="fa-solid fa-star " style="color: #6d91ee;"></i></span>
+                        <span><i class="fa-solid fa-star " style="color: #6d91ee;"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</section>

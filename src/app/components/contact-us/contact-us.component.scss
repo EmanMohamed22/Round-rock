@@ -1,0 +1,49 @@
+@import "../../../styles/main.scss";
+
+.contact-section{
+    padding:3% 0;
+    .container{
+        .header-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .header-2{
+                 position: relative;       
+            }
+        }
+        .row{
+            padding: 5%  15%;
+            .col-md-6{
+                padding: 1rem;
+                
+                span{
+                    padding-right: 1rem;
+                }
+                input{
+                    height: 3rem;
+                    margin: .5rem 0;
+                    padding: .5rem;
+                    border-radius: 3.8125rem;
+                    background: #CEDCFF;
+                }
+                .tel{
+                    p{
+                        font-family: Abel;
+                         font-size: 0.9rem;
+                        font-weight: 400;
+                        margin: 1.5rem;
+                    }
+                }
+            }
+           button{
+            color: $color-tertiary;
+            border: $color-tertiary 2px solid;
+            background-color: $color-white;
+            padding: .5rem 2rem;
+            border-radius: 2rem;
+           }
+        }
+    }
+
+}

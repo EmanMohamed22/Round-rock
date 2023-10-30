@@ -1,0 +1,53 @@
+
+
+.service-section{
+    padding-top: 2rem ;
+    .header-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 3rem 0;
+        .header-2{
+            
+                position: relative;
+                
+        }
+    }
+    .row{
+        .col-md-4{
+             padding: 1rem;
+            .service-card{
+                height: 100%;
+                border:1.5rem ;
+                border-radius: 3rem;
+                box-shadow: 1px 1px 10px  rgb(67, 66, 66);
+                
+                &-text{
+                    padding: 1rem;
+                    color: #324473;
+                
+                    h3{
+                       
+                        font-size: 1rem;
+                        font-weight: 900;
+                        line-height: 1.5rem; 
+                        
+                
+                    }
+                    p{
+                        font-size: .8rem;
+                        font-weight: 400;
+                        line-height: 1.25rem;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .service-button{
+        display: flex;
+        justify-content: center;
+        margin-top: 2.6rem;
+      }
+}

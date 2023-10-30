@@ -1,0 +1,53 @@
+@import "../../../styles/main.scss";
+.testimonial-section {
+  padding: 5% 0;
+  .header-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 3rem 0;
+    .header-2{
+        
+            position: relative;
+        
+    }
+}
+  .col-md-6{
+    padding: 1rem;
+  }
+  .testimonial-card {
+    border: 1px solid #6d91ee;
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 1.8rem;
+    &-avatar {
+      width: 100%;
+      height: 100%;
+       border-radius: 50%;
+       
+       overflow: hidden;
+    
+    }
+    &-text {
+        padding-left: 1rem;
+        h3{
+            color: #6D91EE;
+
+
+font-size: 1.1rem;
+
+font-weight: 700;
+line-height: 1.375rem; 
+        }
+      p {
+        padding: .5rem 0;
+        color: #22366a;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 1.375rem;
+      }
+    }
+  }
+}
