@@ -14,18 +14,29 @@
         }
         .row{
             padding: 5%  15%;
+           
             .col-md-6{
                 padding: 1rem;
                 
                 span{
                     padding-right: 1rem;
                 }
+                .alert{
+                    height: 2rem;
+                    margin: .5rem .5rem;
+                    padding:.5rem  .5rem;
+                    border-radius: 1rem;
+                    font-size: .8rem;
+                    width: 100%;
+                    
+                }
                 input{
                     height: 3rem;
-                    margin: .5rem 0;
+                    margin: 1rem .5rem ;
                     padding: .5rem;
                     border-radius: 3.8125rem;
                     background: #CEDCFF;
+                    text-transform: lowercase;
                 }
                 .tel{
                     p{
@@ -42,7 +53,13 @@
             background-color: $color-white;
             padding: .5rem 2rem;
             border-radius: 2rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            &:active{
+                background-color: blue;
+            }
            }
+           
         }
     }
 

@@ -12,14 +12,40 @@
         </div>
         <div class="row g-3">
             <div class="col-md-6">
-                <form action="" class="">
-                    <input type="text" placeholder="name" class="form-control">
-                    <input type="email" placeholder="email" class="form-control">
-                    <input type="password" placeholder="password" class="form-control">
+                <form action="" class="" [formGroup]="registerForm"  (ngSubmit)="register()"
+                >
+                    <input type="email" placeholder="email" class="form-control mb-1" formControlName="email">
+                    <div class="alert alert-danger" *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.status == 'INVALID'">
+                        <p *ngIf="registerForm.get('email')?.getError('required')">Email is required</p>
+            
+                        
+                        <p *ngIf="registerForm.get('email')?.getError('pattern')">test@gmail.com</p>
+                   
+                      
+                        
+                    </div>
+                    <input type="tel" placeholder="phone" class="form-control mb-1" formControlName="phone">
+                    <div class="alert alert-danger" *ngIf="registerForm.get('phone')?.touched && registerForm.get('phone')?.status == 'INVALID'">
+                        <p *ngIf="registerForm.get('phone')?.getError('required')">Phone is required</p>
+                        
+                   
+                        <p *ngIf="registerForm.get('phone')?.getError('pattern')">Invalid</p>
+                    </div>
+                    <input type="name" placeholder="name" class="form-control mb-1" formControlName="name">
+                    <div class="alert alert-danger" *ngIf="registerForm.get('name')?.touched && registerForm.get('name')?.status == 'INVALID'">
+                        <p *ngIf="registerForm.get('name')?.getError('minlength')">(a-b) minLength 3 </p>
+                         
+                    
+                         <p *ngIf="registerForm.get('name')?.getError('required')">User Name is required</p>
+                         
+                    
+                         <p *ngIf="registerForm.get('name')?.getError('maxlength')">(a-b) maxLength 20 </p>
+                    </div>
+                    <div class="testimonial-btn text-center">
+                        <button type="submit" >send</button>
+                    </div>
                 </form>
-                <div class="testimonial-btn text-center">
-                    <button >send</button>
-                </div>
+               
             </div>
             <div class="col-md-6 flex">
                 <div class="tel">
@@ -34,3 +60,49 @@
         </div>
     </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="alert alert-danger" *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.status == 'INVALID'">
+    <p *ngIf="registerForm.get('email')?.getError('required')">Email is required</p>
+
+</div>
+<div class="alert alert-danger" *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.status == 'INVALID'">
+    
+    <p *ngIf="registerForm.get('email')?.getError('pattern')">test@gmail.com</p>
+      
+</div>
+<div class="alert alert-danger" *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.status == 'INVALID'">
+   
+    <p *ngIf="registerForm.get('email')?.getError('email')">Email invalid</p>
+    
+</div> -->
+<!-- <div class="alert alert-danger" *ngIf="registerForm.get('phone')?.touched && registerForm.get('phone')?.status == 'INVALID'">
+    <p *ngIf="registerForm.get('phone')?.getError('required')">Phone is required</p>
+    
+</div>
+<div class="alert alert-danger" *ngIf="registerForm.get('phone')?.touched && registerForm.get('phone')?.status == 'INVALID'">
+
+    <p *ngIf="registerForm.get('phone')?.getError('pattern')">Invalid</p>
+</div> -->
+<!-- <div class="alert alert-danger" *ngIf="registerForm.get('name')?.touched && registerForm.get('name')?.status == 'INVALID'">
+    <p *ngIf="registerForm.get('name')?.getError('minlength')">minLength 3 </p>
+     
+</div>
+<div class="alert alert-danger" *ngIf="registerForm.get('name')?.touched && registerForm.get('name')?.status == 'INVALID'">
+   
+     <p *ngIf="registerForm.get('name')?.getError('required')">User Name is required</p>
+     
+</div>
+<div class="alert alert-danger" *ngIf="registerForm.get('name')?.touched && registerForm.get('name')?.status == 'INVALID'">
+   
+     <p *ngIf="registerForm.get('name')?.getError('maxlength')">maxLength 20 </p>
+</div> -->
